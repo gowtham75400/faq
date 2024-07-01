@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  background-color: #2f3640;
+}
+
+.main-acc h1 {
+  color: #fff;
+}
+
+.main-acc{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-items{
+  margin-bottom: 20px;
+  border: 2px solid rgb(0, 166, 255);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-item-header {
+  background-color:rgb(0, 166, 255);
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item-header:hover {
+  background-color:rgb(111, 193, 237);
+}
+
+.faq-item-body {
+  background-color: #fff;
+  max-height: 5px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item-body-content {
+  padding: 15px;
+}
+
+.faq-items.active .faq-item-body{
+  max-height: 300px;
+}
